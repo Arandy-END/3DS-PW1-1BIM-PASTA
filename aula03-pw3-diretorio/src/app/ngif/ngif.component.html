@@ -1,0 +1,14 @@
+<ul>
+  <li>Item para todos</li>
+  <li>Item para todos</li>
+  <li>Item para todos</li>
+  <li *ngIf="autenticado; else naoAutenticado">Somente usuário autenticado</li>
+</ul>
+
+
+<button (click)="autenticar()">Loguin</button>
+
+<ng-template #naoAutenticado>
+  <p>Voce não esta logado</p>
+</ng-template>
+   
